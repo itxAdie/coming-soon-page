@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Phatafut</title>
+        <meta name="description" content="Order online. All your favourite products from the low price online supermarket for grocery home delivery in Pakistan. Best experience guaranteed.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/style.css">
+        <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <header>
+            <a href="#" class="logo">Pahatafut</a>
+        </header>
+        <section>
+            <img src="assets/images/stars.png" alt="Stars" id="stars">
+            <img src="assets/images/moon1.png" alt="Moon" id="moon">
+            <img src="assets/images/mountains_behind.png" alt="Mountains Behind" id="mountains_behind">
+            <h2 id="text">Coming Soon</h2>
+            <img src="assets/images/mountains_front.png" alt="Mountains Front" id="mountains_front">
+        </section>
+        <div class="scr">
+            <h2>All About PHATAFUT</h2>
+            <p>
+                Order online. All your favourite products from the low price online supermarket for grocery home delivery
+                 in Pakistan. Best experience guaranteed.
+                <br>
+                <br>
+            </p>
+            <h3>One stop shop for all your daily needs</h3>
+            <p>
+                PhatafutApp is a low-price online supermarket that allows you to order products across categories like grocery,
+                 vegetables, beauty & wellness, household care, baby care, pet care and meats & seafood and gets them delivered
+                  to your doorstep.
+            </p>
+            <br>
+            <br>
+            <h3>One step away from all your daily needs</h3>
+            <br>
+             <a href="#"><img src="assets/images/app_store.png" alt="app store" style="width:120px;height:50px;"></a>
+             <a href="#"><img src="assets/images/play_store.png" alt="play store" style="width:120px;height:50px;"></a>
+
+        </div>
+        
+        <script>
+            let stars = document.getElementById('stars');
+            let moon = document.getElementById('moon');
+            let mountains_behind = document.getElementById('mountains_behind');
+            let text = document.getElementById('text');
+            let mountains_front = document.getElementById('mountains_front');
+            let header = document.querySelector('header');
+
+            window.addEventListener('scroll', function()
+            {
+                let value = window.scrollY;
+                stars.style.left = value * 0.25 + 'px';
+                moon.style.top = value * 1.05 + 'px';
+                mountains_behind.style.top = value * 0.5 + 'px';
+                mountains_front.style.top = value * 0 + 'px';
+                text.style.marginRight = value * 4 + 'px';
+                text.style.marginTop = value * 1.5 + 'px';
+                header.style.top = value * 0.90 + 'px';
+            });
+        </script>
+    </body>
+</html>
